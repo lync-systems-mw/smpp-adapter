@@ -55,8 +55,8 @@ python manage.py migrate
 The smpptransfer app has a seedusers command that creates 2 default users:
 (username and password)
 
-1. chiweto -> @Adapter-2022!
-2. olamula -> @Olamula-2022!
+1. admin -> @admin
+2. app -> @app
 
 To create the default users run:
 
