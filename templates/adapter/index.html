@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <base href="{% static '/' %}">
+
+    <meta charset="UTF-8">
+    <title>SMS Adapter</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+
+<body>
+<div class="container mx-auto w-full h-[100vh]">
+    <header class="text-2xl pt-10 mb-4">
+        SMS Adapter
+    </header>
+    <hr>
+    <p class="py-4">
+        This application is a headless smpp adapter and meant to be accessed via the API.
+    </p>
+    <p class="my-4">
+        However a portal is available for administrative purposes.
+    </p>
+    <div>
+        <a href="{% url 'admin:index' %}"
+           class="shadow-sm bg-sky-500 px-4 py-2 rounded mt-4 text-white flex space-x-4 w-max">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+            </svg>
+            Login to Portal
+        </a>
+    </div>
+</div>
+</body>
+</html>
